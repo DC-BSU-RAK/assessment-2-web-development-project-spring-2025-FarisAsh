@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+/*body style*/
+body {
+    font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* i love this font */
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    background-image: url(pages/images/DOOM.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures full image is in view */
+    background-position: center;
+    background-attachment: fixed; /* Optional: gives a cool parallax effect */
+    color: #e6e6e6;
+    line-height: 1.7;
+}
+
+/*wrapper for boxing the content in*/
+.content-wrapper {
+    padding: 50px 30px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #1a1a1a;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/*Navigation bar styling*/
+.navbar {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #ff0000;
+}
+/*Navigation bar effects such as hover and all*/
+.navbar a {
+    color: #e6e6e6;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/*Section Headers styling*/
+h1, h2 {
+    color: #ff0000;
+    text-transform: uppercase;
+    border-left: 6px solid #ff0000;
+    padding-left: 15px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/*paragraph styling, font size and all of that stuff*/
+p, ul, li {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+/*Button style*/
+.button {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #b30000;
+    transform: scale(1.05);
+}
+
+/*Text Highlights for that doom effect*/
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+/*Footer or Quote styling*/
+.doom-footer {
+    background-color: #111;
+    color: #ff0000;
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 60px;
+    font-size: 1.2em;
+    border-top: 3px solid #ff0000;
+    text-shadow: 0 0 8px #ff0000;
+}
+
+.doom-footer .highlight {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #ff0000;
+}
+#doom-quote {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    color: #f44336;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.doom-logo {
+    display: block;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+#gameplay-video {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.hover-video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.hover-video:hover {
+    /* Optional: scale effect on hover */
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
